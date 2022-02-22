@@ -14,20 +14,20 @@
             <div class="row">
                 <div class="col">
                     <h1>Kvíz feladatok</h1>
-                    <p>1. Milyen Nobel-díjat kapott Harsányi János 1994-ben?</p>
-                    <p>
+                    <h4>1. Milyen Nobel-díjat kapott Harsányi János 1994-ben?</h4>
+                    <p class="mx-4">
                         <input type="radio" value="rossz" name="elsok" id="fizikai" oninput="elso()">
                         <label for="fizikai">Fizikai</label>
                     </p>
-                    <p>
+                    <p class="mx-4">
                         <input type="radio" value="rossz"  name="elsok" id="kemiai" oninput="elso()">
                         <label for="kemiai">Kémiai</label>
                     </p>
-                    <p>
+                    <p class="mx-4">
                         <input type="radio" value="jo"  name="elsok" id="kozgazdasagi" oninput="elso()">
-                        <label for="kozgazdasagi">Közgazdasági helyes</label>
+                        <label for="kozgazdasagi">Közgazdasági</label>
                     </p>
-                    <p>
+                    <p class="mx-4">
                         <input type="radio" value="rossz"  name="elsok" id="orvosi" oninput="elso()">
                         <label for="orvosi">Orvosi</label>
                     </p>
@@ -35,16 +35,16 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p>2. Mi a "Pershing 2"?</p>
-                    <p>
-                        <input type="text" placeholder="Rakéta a helyes" name="masodikk" id="raketa" oninput="masodik()">
+                    <h4>2. Mi a "Pershing 2"?</h4>
+                    <p class="mx-4">
+                        <input type="text" name="masodikk" id="raketa" oninput="masodik()">
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>3. Milyen magas a Kékes?</p>
-                    <p>
+                    <h4>3. Milyen magas a Kékes?</h4>
+                    <p class="mx-4">
                         <input type="range" min="300" max="1500" step="1" name="harmadikk" id="kekes" oninput="harmadik()">
                         <label for="kekes" id="kekeslabel">900 m</label>
                     </p>
@@ -52,17 +52,18 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p>4. Hány folyója van Magyarországnak?</p>
-                    <p>
-                        <input type="number" placeholder="11" name="negyedikk" id="tizenegy" oninput="negyedik()">
+                    <h4>4. Hány folyója van Magyarországnak?</h4>
+                    <p class="mx-4">
+                        <input type="number" name="negyedikk" id="tizenegy" oninput="negyedik()">
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p>5. Melyik település található Komárom-Esztergom megyében?</p>
-                    <p>
+                    <h4>5. Melyik település található Komárom-Esztergom megyében?</h4>
+                    <p class="mx-4">
                         <select name="otodikk" id="telepules" oninput="otodik()">
+                            <option value="">Válassz...</option>
                             <option value="Gyor">Győr</option>
                             <option value="Zalaegerszeg">Zalaegeszeg</option>
                             <option value="Nagyigmand">Nagyigmánd</option>
