@@ -37,23 +37,50 @@ function otodik(){
 
 function elsoell(){
     if(elsovalasz == "jo"){
-        pontok++;
+        pontok += 3 ;
     }
     else{
-        pontok-1;
+        pontok -= 1;
     }
 }
 
 function masodikell(){
     if(masodikvalasz  == "Rakéta"){
-        pontok++;
+        pontok += 2;
     }else{
-        pontok-1;
+        pontok -= 1;
+    }
+}
+
+function harmadikell(){
+    if(harmadikvalasz == "1014"){
+        pontok += 1;
+    }else{
+        pontok -= 1;
+    }
+}
+
+function negyedikell(){
+    if(negyedikvalasz == "11"){
+        pontok += 3;
+    }else{
+        pontok -= 1;
+    }
+}
+
+function otodikell(){
+    if(otodikvalasz == "Nagyigmand"){
+        pontok += 1;
+    }else{
+        pontok -= 1;
     }
 }
 
 function ellenorzes(){
     elsoell();
     masodikell();
+    harmadikell();
+    negyedikell();
+    otodikell();
     console.log(pontok);
 }
