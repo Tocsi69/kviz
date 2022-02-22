@@ -76,11 +76,26 @@ function otodikell(){
     }
 }
 
+function vege(){
+    var x = document.getElementById("gomb");
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+    if(pontok < 0){
+        pontok = 0;
+        document.getElementById("pont").innerText = "Elért pontszámod: " + pontok;
+    }else{
+        document.getElementById("pont").innerText = "Elért pontszámod: " + pontok;
+    }
+}
+
 function ellenorzes(){
     elsoell();
     masodikell();
     harmadikell();
     negyedikell();
     otodikell();
-    console.log(pontok);
+    vege();
 }
