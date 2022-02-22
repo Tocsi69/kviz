@@ -35,10 +35,25 @@ function otodik(){
     otodikvalasz = temp.options[temp.selectedIndex].value;
 }
 
+function elsoell(){
+    if(elsovalasz == "jo"){
+        pontok++;
+    }
+    else{
+        pontok-1;
+    }
+}
+
+function masodikell(){
+    if(masodikvalasz  == "Rakéta"){
+        pontok++;
+    }else{
+        pontok-1;
+    }
+}
+
 function ellenorzes(){
-    console.log(elsovalasz);
-    console.log(masodikvalasz);
-    console.log(harmadikvalasz);
-    console.log(negyedikvalasz);
-    console.log(otodikvalasz);
+    elsoell();
+    masodikell();
+    console.log(pontok);
 }
