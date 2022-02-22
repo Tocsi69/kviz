@@ -37,7 +37,7 @@
                 <div class="col">
                     <p>2. Mi a "Pershing 2"?</p>
                     <p>
-                        <input type="text" placeholder="Rakéta a helyes" name="masodikk" id="raketa">
+                        <input type="text" placeholder="Rakéta a helyes" name="masodikk" id="raketa" oninput="masodik()">
                     </p>
                 </div>
             </div>
@@ -45,7 +45,8 @@
                 <div class="col">
                     <p>3. Milyen magas a Kékes?</p>
                     <p>
-                        <input type="range" min="300" max="2000" step="1" name="harmadikk" id="kekes">
+                        <input type="range" min="300" max="1500" step="1" name="harmadikk" id="kekes" oninput="harmadik()">
+                        <label for="kekes" id="kekeslabel">900 m</label>
                     </p>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                 <div class="col">
                     <p>4. Hány folyója van Magyarországnak?</p>
                     <p>
-                        <input type="number" placeholder="11" name="negyedikk" id="tizenegy">
+                        <input type="number" placeholder="11" name="negyedikk" id="tizenegy" oninput="negyedik()">
                     </p>
                 </div>
             </div>
@@ -61,12 +62,12 @@
                 <div class="col">
                     <p>5. Melyik település található Komárom-Esztergom megyében?</p>
                     <p>
-                        <select name="otodikk" id="telepules">
-                            <option value="v1">Győr</option>
-                            <option value="v2">Zalaegeszeg</option>
-                            <option value="v3">Nagyigmánd</option>
-                            <option value="v4">Fehérvárcsúrgó</option>
-                            <option value="v5">Miskolc</option>
+                        <select name="otodikk" id="telepules" oninput="otodik()">
+                            <option value="Gyor">Győr</option>
+                            <option value="Zalaegerszeg">Zalaegeszeg</option>
+                            <option value="Nagyigmand">Nagyigmánd</option>
+                            <option value="Fehervarcsurgo">Fehérvárcsúrgó</option>
+                            <option value="Miskolc">Miskolc</option>
                         </select>
                     </p>
                 </div>
